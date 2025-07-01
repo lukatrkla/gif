@@ -17,7 +17,7 @@ backlight.switch_to_output(value=True)
 display = ili9341.ILI9341(spi, cs, dc, reset, width=240, height=320)
 
 # GIF folder
-gif_folder = "/home/luka/Desktop/gif_player.py"
+gif_folder = "/home/luka/gifs"
 gifs = [f for f in os.listdir(gif_folder) if f.endswith(".gif")]
 
 # Loop through GIFs
