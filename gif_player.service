@@ -1,0 +1,12 @@
+[Unit]
+Description=GIF Player on ILI9341
+After=multi-user.target
+
+[Service]
+ExecStart=/usr/bin/python3 /home/luka/Desktop/gif_player.py
+Restart=always
+User=luka
+WorkingDirectory=/home/luka/Desktop
+
+[Install]
+WantedBy=multi-user.target
